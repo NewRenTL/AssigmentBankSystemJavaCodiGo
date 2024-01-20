@@ -30,13 +30,13 @@ public class CurrentAccount implements Account{
         }
         else {
             this.amount -= amount;
-            System.out.println("You withdrew $"+amount);
+            System.out.println("Your money withdrawal $"+amount+" was successfully");
         }
     }
 
     @Override
     public double calculateInterest() {
-        return amount*0.1*3;
+        return amount*0.05*4;
     }
 
     public void showInformation()

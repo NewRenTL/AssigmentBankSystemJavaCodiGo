@@ -29,7 +29,7 @@ public class SavingsAccount implements Account{
         }
         else {
             this.amount -= amount;
-            System.out.println("You withdrew $"+amount);
+            System.out.println("Your money withdrawal $"+amount+" was successfully");
         }
     }
 
@@ -38,7 +38,12 @@ public class SavingsAccount implements Account{
         return amount*0.05*3;
     }
 
-    public double calculateInterestRate(double interestRate,int temp_periods)
+    @Override
+    public void showInformation() {
+        System.out.println("My name is "+name+". I have $"+amount+" currently in my SavingsAccount");
+    }
+
+    public double calculateInterestRate(double interestRate, int temp_periods)
     {
         return this.amount*interestRate*temp_periods;
     }                   

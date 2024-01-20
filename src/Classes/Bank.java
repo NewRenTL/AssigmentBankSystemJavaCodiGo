@@ -4,11 +4,19 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Bank {
-    List<Account> accounts = new ArrayList<>();
+    List<Account> accounts;
 
-    void addAccount(Account account)
+    public Bank()
+    {
+        accounts = new ArrayList<>();
+    }
+
+    public void addAccount(Account account)
     {
         accounts.add(account);
     }
 
+    public List<Account> getAccounts() {
+        return accounts;
+    }
 }

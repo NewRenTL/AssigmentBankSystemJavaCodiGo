@@ -6,5 +6,7 @@
         void withdraw(double amount);
 
         double calculateInterest();
+
+        void showInformation();
     }
 
