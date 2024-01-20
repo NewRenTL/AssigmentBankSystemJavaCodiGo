@@ -1,10 +1,10 @@
-package Classes;
+    package Classes;
 
-public interface Account {
-    void deposit(double amount);
+    public interface Account {
+        void deposit(double amount);
 
-    void withdraw(double amount);
+        void withdraw(double amount);
 
-    double calculateInterest();
-}
+        double calculateInterest();
+    }
 
